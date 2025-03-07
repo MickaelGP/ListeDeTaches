@@ -1,0 +1,93 @@
+body {
+    background: #3b3b3b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#titre-page {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+#div-ajout-todo {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#div-input {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#input-todo {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: 0.2rem solid #cecece;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#div-btn {
+    text-align: center;
+}
+
+#btn-ajout-todo {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffffff;
+    color: #313131;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#btn-ajout-todo:hover {
+    transform: scale(1.1);
+}
+
+#div-list-tache {
+    margin-top: 3rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#list-tache {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li-tache {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #cecece;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.li-tache:hover {
+    background-color: #555;
+}
+
+.li-tache.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.deleteBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+    background-color: #ff3333;
+}
