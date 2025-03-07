@@ -7,7 +7,6 @@ afficheData()
 btn.addEventListener("click", (event) => {
     if(localStorage.getItem(input.value.trim()) !== input.value) {
         localStorage.setItem(input.value.trim(), input.value.trim())
-        console.log(localStorage);
         input.value = "";
         listeTache.innerHTML = ""
         afficheData()
