@@ -5,7 +5,9 @@ const listeTache = document.getElementById("liste-tache");
 afficheData()
 
 btn.addEventListener("click", (event) => {
-    if(localStorage.getItem(input.value.trim()) !== input.value) {
+    if(input.value === "") {
+        alert("Impossible d'ajouter une tâche sans valeur!");
+    }else if(localStorage.getItem(input.value.trim()) !== input.value){
         localStorage.setItem(input.value.trim(), input.value.trim())
         input.value = "";
         listeTache.innerHTML = ""
