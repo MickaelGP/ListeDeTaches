@@ -5,7 +5,6 @@ const listeTache = document.getElementById("liste-tache");
 afficheData()
 
 btn.addEventListener("click", (event) => {
-    //let numero = "liste-"+localStorage.length;
     if(localStorage.getItem(input.value.trim()) !== input.value) {
         localStorage.setItem(input.value.trim(), input.value.trim())
         console.log(localStorage);
