@@ -46,7 +46,6 @@ function afficheData(){
        liste.push(localStorage.key(i));
     }
     liste.forEach((item, key) => {
-        console.log(item);
      CreateLi(item);
    })
 
